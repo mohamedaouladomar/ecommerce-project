@@ -1,0 +1,120 @@
+    /* Reset and Global Styles */
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Arial', sans-serif;
+        box-sizing: border-box;
+        transition: all 0.3s ease-out;
+    }
+
+    /* Footer Styles */
+    .footer {
+        padding: 50px 60px;
+        background: #333;
+        color: #fff;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .footer:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: -50%;
+        width: 200%;
+        height: 100%;
+        background: linear-gradient(120deg, #0989ff, #333 60%);
+        transform: rotate(-15deg);
+        z-index: -1;
+    }
+
+    .footer .container {
+        max-width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .footer .container > div {
+        flex-basis: calc(33.33% - 10px);
+        box-sizing: border-box;
+        padding: 10px;
+        position: relative;
+    }
+
+    .footer .container .aboutt .detail p {
+        margin-top: 20px;
+        font-size: 16px;
+        color: #fff;
+        opacity: 0.9;
+    }
+
+    .footer .container .aboutt .detail .icon {
+        margin-top: 25px;
+        display: flex;
+        align-items: center;
+    }
+
+    .footer .container .aboutt .detail .icon li {
+        margin-left: 20px;
+        list-style: none;
+        padding: 8px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.1);  /* subtle background */
+        cursor: pointer;
+        transform: scale(0.9);
+    }
+
+    .footer .container .aboutt .detail .icon li:hover {
+        background: #0989ff;
+        transform: scale(1);
+    }
+
+    .footer .container h3 {
+        font-size: 24px;
+        color: #fff;
+        margin-bottom: 20px;
+        position: relative;
+    }
+
+    .footer .container h3:after {
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        width: 50px;
+        height: 2px;
+        background: #0989ff;  /* underline accent */
+    }
+
+    .footer .container ul {
+        list-style-type: none;
+    }
+
+    .footer .container ul li {
+        margin-top: 10px;
+        font-size: 14px;
+        cursor: pointer;
+        padding-left: 15px; 
+        position: relative;
+        opacity: 0.8;
+    }
+
+    /* Arrow effect on hover */
+    .footer .container ul li:before {
+        content: "→";
+        position: absolute;
+        left: -20px;
+        opacity: 0;
+        transition: opacity 0.3s, transform 0.3s;
+    }
+
+    .footer .container ul li:hover {
+        opacity: 1;
+        transform: translateX(5px);
+    }
+
+    .footer .container ul li:hover:before {
+        opacity: 1;
+        transform: translateX(0);
+    }

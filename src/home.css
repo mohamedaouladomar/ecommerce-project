@@ -1,0 +1,470 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+/* General styles and layout adjustments */
+/* General styles and layout adjustments */
+.top_banner {
+    font-family: 'Poppins', sans-serif;
+    padding: 100px 60px; /* Increased padding for a more spacious feel */
+    width: 100%;
+    background: #333;
+}
+
+.top_banner .container {
+    max-width: 1200px;  
+    margin: 0 auto;  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top_banner .container .detail {
+    flex: 1;
+    padding-right: 40px; /* Increased padding for more spacing between text and image */
+}
+
+.top_banner .container .img_box {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top_banner .container .img_box img {
+    max-width: 90%; /* Making the image slightly larger */
+    border-radius: 12px; /* Slightly rounded corners */
+}
+
+/* Modern Typography adjustments */
+.top_banner .container .detail h2 {
+    font-size: 60px; /* Increased font size */
+    color: #f5f5f5;
+    margin-bottom: 35px; /* More space below the heading */
+    font-weight: 700; /* Bold font weight */
+    letter-spacing: -0.7px; 
+    line-height: 1.2;
+}
+
+.top_banner .container .detail .link {
+    padding: 15px 30px; /* Bigger button */
+    text-decoration: none;
+    border: 3px solid #f5f5f5; /* Thicker border */
+    border-radius: 6px; /* Slight increase in border radius */
+    color: #f5f5f5;
+    font-weight: 500; 
+    transition: 0.4s;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    letter-spacing: 0.7px; 
+    font-size: 18px; /* Increased font size for the link text */
+}
+
+.top_banner .container .detail .link:hover {
+    background: #f5f5f5;
+    color: #333;
+    border-color: #333;
+}
+
+/* Icon (Arrow) adjustments */
+.top_banner .container .detail .link .BsArrowRight {
+    transition: 0.3s;
+    font-size: 20px; /* Slightly bigger arrow */
+}
+
+.top_banner .container .detail .link:hover .BsArrowRight {
+    transform: translateX(7px); /* Slightly bigger translation on hover */
+}
+
+
+/* Universal Styles */
+/* Universal Styles */
+
+
+/* Product Type Section */
+.product_type {
+    background-color: #333;
+    padding: 40px 0;
+    color: #f4f4f4;
+}
+
+.product_type .container {
+    display: flex;
+    justify-content: space-around; /* This will distribute the space more evenly between the boxes */
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.product_type .box {
+    background-color: #2e2e2e;
+    border-radius: 10px;
+    overflow: hidden;
+    flex: 0 1 calc(23% - 10px); /* This ensures that each box will take up no more than roughly a quarter of the space, minus a bit for the margin. */
+    margin: 0 10px; /* Small margin on left and right to create gaps */
+    position: relative;
+    transition: 0.2s;
+}
+
+.product_type .box:hover {
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+}
+
+.product_type .img_box img {
+    width: 100%;
+    transition: 0.3s;
+    transform: scale(1.05);  /* Starting with a slightly zoomed in state */
+}
+
+.product_type .img_box:hover img {
+    transform: scale(1);  /* Zoom out effect on hover */
+}
+
+.product_type .detail {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 5px 15px;
+    border-radius: 20px;
+}
+
+/* About Section */
+.about {
+    background-color: #333;
+    padding: 40px 0;
+    color: #f4f4f4;
+}
+
+.about .container {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.about .box {
+    background-color: #2e2e2e;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex: 1;
+}
+
+.about .icon {
+    font-size: 40px;
+    color: #d8d8d8;
+}
+
+.about .detail h3 {
+    font-size: 22px;
+    margin: 0 0 10px;
+    color: #fff;
+}
+
+.about .detail p {
+    margin: 0;
+}
+
+/* Product Type Section */
+
+
+.product {
+    padding: 70px 60px;
+    background: #333;
+    width: 100%;
+}
+
+.product h2 {
+    font-size: 42px;
+    color: #eee;
+    margin-bottom: 40px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.product .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px; /* Creates consistent gaps between the boxes */
+}
+
+.product .container .box {
+    background: #444;
+    padding: 25px;
+    width: 250px;
+    height: 350px;
+    border: 2px solid #555;
+    margin-bottom: 35px;
+    transition: all 0.5s;
+    cursor: pointer;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.product .container .box:hover {
+    background: #555;
+    transform: scale(1.05);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.6);
+}
+
+.product .container .box .img_box {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centers image vertically */
+    position: relative;
+    height: 180px; /* Fixed height to contain images */
+}
+
+.product .container .box .img_box img {
+    max-width: 90%; /* Adjust to fit the box */
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.product .container .box .img_box .icon {
+    z-index: 1;
+    position: absolute;
+    right: 10px;  /* Adjusted this to bring it closer to the right edge */
+    top: 50%; 
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+    opacity: 0;
+    transition: opacity 0.5s;
+    transform: translateY(-50%); 
+}
+
+.product .container .box:hover .img_box .icon {
+    opacity: 1;
+}
+
+.product .container .box .img_box .icon li {
+    list-style: none;
+    padding: 10px;
+    color: #555; /* Darker color for contrast */
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.6); /* Slightly opaque background */
+    border: 1px solid #aaa; /* Subtle border for depth */
+    border-radius: 50%;
+    transition: all 0.5s;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4); /* Subtle shadow for depth */
+}
+
+.product .container .box .img_box .icon li:hover {
+    background-color: #eee;
+    transform: scale(1.1) translateY(-3px); /* Slight upward lift and scale on hover */
+    color: #333;
+}
+
+.product .container .box .detail {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.product .container .box .detail p {
+    color: #bbb;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.product .container .box .detail h3 {
+    font-size: 19px;
+    margin-top: 15px;
+    color: #fff;
+    transition: color 0.5s;
+}
+
+.product .container .box:hover .detail h3 {
+    color: #ddd; 
+}
+
+.product .container .box .detail h4 {
+    margin-top: 15px;
+    font-size: 16px;
+    color: #eee;
+}
+
+/* ...........................................Banner */
+.banner {
+    padding: 20px 30px;
+    width: 100vw; /* Full viewport width */
+    height: 70vh; /* 60% of the viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333; /* Set the background color */
+}
+
+.banner .container {
+    width: calc(100% - 60px); /* Deduct the padding */
+    height: calc(100% - 40px); /* Deduct the padding */
+    padding: 30px 40px;
+    background: rgba(255, 255, 255, 0.1); /* Added a slightly transparent white for contrast */
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner .container .detail {
+    margin-top: 10%;
+    margin-left: 20px;
+}
+
+.banner .container .detail h4 {
+    color: #e3edf6;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.banner .container .detail h3 {
+    margin-top: 10px;
+    font-size: 42px;
+    margin-right: 20%;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+.banner .container .detail p {
+    margin-top: 30px;
+    color: #e3edf6; /* Adjusted the color to be slightly lighter for visibility */
+    font-size: 32px;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.banner .container .detail .link {
+    padding: 10px 30px;
+    color: #e3edf6; /* Adjusted color for visibility on the dark background */
+    background: #010f1c;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.banner .container .detail .link:hover {
+    color: #010f1c;
+    background: #e8f4ff;
+}
+/* ------------------------------------------------ */
+.product_detail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+}
+
+.product_detail .container {
+    position: relative;
+    width: 80%;
+    max-width: 1000px;
+    background: #fff;
+    padding: 40px 50px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.product_detail .container .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    background: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #888;
+    transition: color 0.3s ease;
+}
+
+.product_detail .container .closebtn:hover {
+    color: #ff4b5c;
+}
+
+.product_detail .container .productbox {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.product_detail .container .productbox .img-box {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f9f9f9;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.product_detail .container .productbox .img-box img {
+    max-width: 100%;
+    max-height: 300px;
+}
+
+.product_detail .container .productbox .detail {
+    flex: 1.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.product_detail .container .productbox .detail h4 {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 200;
+    color: #9a9a9a;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.product_detail .container .productbox .detail h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.product_detail .container .productbox .detail p {
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.product_detail .container .productbox .detail h3 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.product_detail .container .productbox .detail button {
+    align-self: start;
+    padding: 10px 40px;
+    font-size: 16px;
+    color: #fff;
+    background: #333;
+    transition: 0.3s;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+}
+
+.product_detail .container .productbox .detail button:hover {
+    background: #555;
+}

@@ -1,0 +1,64 @@
+.contact_comtainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f9f9f9;
+    
+}
+
+.contant {
+    width: 600px;
+    padding: 50px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.contant h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #444;
+}
+
+.from {
+    display: flex;
+    flex-direction: column;
+}
+
+.from input, .from textarea {
+    margin-bottom: 20px;
+    padding: 15px;
+    font-size: 18px;
+    width: 100%;
+    border: 2px solid #e0e0e0;
+    border-radius: 6px;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.from input::placeholder, .from textarea::placeholder {
+    font-size: 18px;
+}
+
+.from input:focus, .from textarea:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.from button {
+    padding: 15px 30px;
+    font-size: 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.from button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
